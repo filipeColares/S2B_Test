@@ -46,5 +46,10 @@ public class somadorTest {
 	public void testBouthNumbersAreNegative() {
 		somador.soma(-10, -20);
 	}
+	
+	@Test (expected = IllegalArgumentException.class)
+	public void testDivisor() {
+		somador.subtrair(2, 3);
+	}
 
 }

@@ -10,13 +10,18 @@ public class App
 {
     public static void main( String[] args )
     {
+    	//int operador1;
     	
     	Scanner scanner = new Scanner(System.in);
     	somador somador = new somador();
     	
+    	//System.out.println("Insira a operação");
+    	//int operador1 = scanner.nextInt();
+    	
     	System.out.println("Insira dois números: \n");
     	double num1 = scanner.nextDouble();
     	double num2 = scanner.nextDouble();
+  
     	
     	System.out.println("Exibindo valores\n");
     	System.out.println(num1);
@@ -24,6 +29,20 @@ public class App
     	
     	System.out.println("Resultado da soma");
     	System.out.println(somador.soma(num1, num2));
+    	
+    	/*switch (operador1) {
+		case 1:
+			System.out.println(somador.soma(num1, num2));
+			break;
+
+		case 2:
+			System.out.println(somador.subtrair(num1, num2));
+			break;
+			
+		default:
+			break;
+		}*/
+    	
     	
     	scanner.close();
     	
