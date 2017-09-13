@@ -15,11 +15,21 @@ public class App
     	Scanner scanner = new Scanner(System.in);
     	somador somador = new somador();
     	
-    	//System.out.println("Insira a operação");
-    	//int operador1 = scanner.nextInt();
-    	
-    	System.out.println("Insira dois números: \n");
+    	System.out.println("Insira piromeiro número: \n");
     	double num1 = scanner.nextDouble();
+    	
+    	/*System.out.println("Insira a operação:");
+    	operador1 = scanner.nextInt();
+    	switch (operador1) {
+		case 1:
+			
+			break;
+
+		default:
+			break;
+		}*/
+    	
+    	System.out.println("Insira o segundo número:\n");
     	double num2 = scanner.nextDouble();
   
     	
@@ -29,6 +39,8 @@ public class App
     	
     	System.out.println("Resultado da soma");
     	System.out.println(somador.soma(num1, num2));
+    	System.out.println("Resultado da divisão");
+    	System.out.println(somador.subtrair(num1, num2));
     	
     	/*switch (operador1) {
 		case 1:
